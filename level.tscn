@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://cmq70se6sg6gn"]
+
+[ext_resource type="Script" path="res://Scripts/level.gd" id="1_31cvo"]
+[ext_resource type="PackedScene" uid="uid://doybndwvn3muo" path="res://enemy/enemy.tscn" id="2_ryxbl"]
+[ext_resource type="SpriteFrames" uid="uid://dhkqas20igd4i" path="res://enemy/enemy_green.tres" id="3_2xn7w"]
+[ext_resource type="PackedScene" uid="uid://8p5jm4sly8dx" path="res://player.tscn" id="3_32juf"]
+[ext_resource type="SpriteFrames" uid="uid://cnkc5d0th4l48" path="res://enemy/enemy_blue.tres" id="4_cdlem"]
+[ext_resource type="SpriteFrames" uid="uid://dpa7kijgokane" path="res://enemy/enemy_yellow.tres" id="5_v0add"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_31cvo")
+enemy_scene = ExtResource("2_ryxbl")
+enemy_sprites = Array[SpriteFrames]([ExtResource("3_2xn7w"), ExtResource("4_cdlem"), ExtResource("5_v0add")])
+
+[node name="Player" parent="." instance=ExtResource("3_32juf")]
+z_index = 1
+position = Vector2(576, 328)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position_smoothing_enabled = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.545098, 1, 0.466667, 1)
+
+[node name="StartPosition" type="Marker2D" parent="."]
+position = Vector2(576, 328)
