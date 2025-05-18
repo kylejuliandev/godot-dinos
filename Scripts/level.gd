@@ -12,6 +12,7 @@ func _ready() -> void:
 		var new_enemy : Enemy = enemy
 		var index : int = randi_range(0, enemy_sprites.size() - 1)
 		new_enemy.sprite_frames = enemy_sprites[index]
+		new_enemy.area = $Area2D/CollisionShape2D
 		add_child(enemy)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

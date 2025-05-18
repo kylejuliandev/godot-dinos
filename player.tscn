@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://8p5jm4sly8dx"]
 
-[ext_resource type="Script" path="res://Scripts/player.gd" id="1_raoif"]
+[ext_resource type="Script" uid="uid://dmp2uwonnwykx" path="res://Scripts/player.gd" id="1_raoif"]
 [ext_resource type="Texture2D" uid="uid://dljskycp1mel8" path="res://dino/sheets/mort.png" id="2_4mhbm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_we8fx"]

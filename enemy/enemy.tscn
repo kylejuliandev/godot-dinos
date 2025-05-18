@@ -1,11 +1,11 @@
 [gd_scene load_steps=19 format=3 uid="uid://doybndwvn3muo"]
 
-[ext_resource type="Script" path="res://enemy/enemy.gd" id="1_5tm76"]
+[ext_resource type="Script" uid="uid://4f8lmh2g7y0w" path="res://enemy/enemy.gd" id="1_5tm76"]
 [ext_resource type="Texture2D" uid="uid://p6bax74agqv5" path="res://dino/sheets/doux.png" id="1_mnrex"]
-[ext_resource type="Script" path="res://enemy/EnemyState/enemy_chase.gd" id="3_p75oo"]
-[ext_resource type="Script" path="res://enemy/state_machine.gd" id="3_s2rtu"]
-[ext_resource type="Script" path="res://enemy/EnemyState/enemy_idle.gd" id="4_a26vy"]
-[ext_resource type="Script" path="res://enemy/EnemyState/enemy_wander.gd" id="6_xcw6n"]
+[ext_resource type="Script" uid="uid://gnrucu1bf82g" path="res://enemy/EnemyState/enemy_chase.gd" id="3_p75oo"]
+[ext_resource type="Script" uid="uid://opbdwh3tvpof" path="res://enemy/state_machine.gd" id="3_s2rtu"]
+[ext_resource type="Script" uid="uid://cltgx0rkbkfgd" path="res://enemy/EnemyState/enemy_idle.gd" id="4_a26vy"]
+[ext_resource type="Script" uid="uid://bwh4mhxial5xv" path="res://enemy/EnemyState/enemy_wander.gd" id="6_xcw6n"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gwsqw"]
 atlas = ExtResource("1_mnrex")
